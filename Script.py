@@ -106,6 +106,7 @@ This module only works for my admins
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
+Invite Link -{}
 """
     LOG_TEXT_P = """#newuserfound
 ID - <code>{}</code>
