@@ -656,11 +656,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}",
+                    text=f"⚡{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
+                    text=f"⚡{get_size(file.file_size)}",
                     callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
@@ -672,7 +672,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 10)}", callback_data="pages"),
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results) / 5)}", callback_data="pages"),
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
