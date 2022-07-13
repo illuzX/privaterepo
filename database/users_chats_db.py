@@ -122,7 +122,7 @@ class Database:
         return default
     
 
-    async def disable_chat(self, chat, reason="udayip🙄👍🏻"):
+    async def disable_chat(self, chat, reason="No Reson"):
         chat_status=dict(
             is_disabled=True,
             reason=reason,
